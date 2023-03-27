@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Input } from '../../index';
 import { useForm } from '../context';
 import clsx from 'clsx'
+import { type DynamicFormProps } from '../types';
 
 type validationProps = null | { id: string, value: string, status: string, message: string } | boolean
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tab as TabComponent } from '@headlessui/react';
 import clsx from 'clsx';
-import { Icon } from '..';
+import { Icon, type IconKeys } from '../Icon';
 
 type TabProps = {
   orientation: 'horizontal' | 'vertical';
@@ -9,7 +9,7 @@ type TabProps = {
     name: string;
     view: React.ComponentType;
     icon?: {
-      name: string;
+      name: IconKeys;
       color?: string;
       size?: 'small' | 'medium' | 'large';
     };

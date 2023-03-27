@@ -2,8 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import { Menu } from '@headlessui/react';
 import { Popover } from '@headlessui/react'
-import { Icon } from '../Icon';
-
+import { Icon, type IconKeys } from '../Icon';
 
 type ButtonProps = {
   text?: string;
@@ -19,7 +18,7 @@ type ButtonProps = {
   size?: 'tiny' | 'small' | 'medium' | 'large' | 'xlarge';
   type?: 'submit' | 'button' | 'link' | 'menu' | 'action' | 'upload' | 'popover';
   as?: 'button' | 'div';
-  icon?: string | undefined;
+  icon?: IconKeys;
   to?: string;
   rounded?: 'small' | 'medium' | 'full';
   onClick?: () => void;

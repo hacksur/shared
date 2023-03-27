@@ -1,12 +1,13 @@
 import React from 'react';
 import { Button } from '../Button';
+import { type IconKeys} from '../Icon';
 
 type UploaderProps = {
   text: string;
   to: string;
   submit: any;
   size?: 'tiny' | 'small' | 'medium' | 'large';
-  icon?: string | undefined;
+  icon?: IconKeys | undefined;
   variant?:
   | 'primary'
   | 'secondary'

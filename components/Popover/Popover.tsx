@@ -1,11 +1,12 @@
 import { Popover as PopoverComponent, Transition } from '@headlessui/react';
 import React, { FunctionComponent, Fragment } from 'react';
 import { Button } from '../'
+import { type IconKeys } from '../Icon';
 
 type PopoverProps = {
   button: {
     name?: string;
-    icon?: string;
+    icon?: IconKeys;
     size?: 'tiny' | 'small' | 'medium' | 'large';
     variant?:
     | 'primary'

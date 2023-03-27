@@ -1,13 +1,14 @@
 import { Menu, Transition } from '@headlessui/react';
 import { Button } from '..';
 import React, { Fragment } from 'react';
+import { type IconKeys } from '../Icon';
 
 export type DropdownItemsI = {
   text: string;
   type: 'button' | 'link' | 'action';
   action?: () => void;
   to?: string;
-  icon?: string;
+  icon?: IconKeys;
 }[];
 
 type DropdownProps = {
@@ -15,7 +16,7 @@ type DropdownProps = {
   component?: React.ElementType;
   button: {
     name?: string;
-    icon?: string;
+    icon?: IconKeys;
     size?: 'tiny' | 'small' | 'medium' | 'large';
     variant?:
     | 'primary'

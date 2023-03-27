@@ -1,8 +1,8 @@
 import React from 'react';
 import clsx from 'clsx';
-import { icons } from '~/theme/src/assets/icons';
+import { icons } from '../../../assets/icons';
 
-type IconKeys = keyof typeof icons; 
+export type IconKeys = keyof typeof icons; 
 
 type IconProps = {
   name: IconKeys;

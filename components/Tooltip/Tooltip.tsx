@@ -2,11 +2,12 @@ import { Popover as TooltipComponent, Transition } from '@headlessui/react';
 import React, { FunctionComponent, Fragment } from 'react';
 import { Button } from '..'
 import { Float } from '@headlessui-float/react'
+import { type IconKeys} from '../Icon';
 
 type TooltipProps = {
   button: {
     name?: string;
-    icon?: string;
+    icon?: IconKeys | undefined;
     size?: 'tiny' | 'small' | 'medium' | 'large';
     variant?:
     | 'primary'

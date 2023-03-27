@@ -1,3 +1,4 @@
+import { type IconKeys } from '../Icon';
 
 type FieldProps = {
   type:
@@ -30,7 +31,7 @@ type FieldProps = {
 type ButtonProps = {
   text: string;
   loading?: boolean;
-  icon?: 'string';
+  icon?: IconKeys;
   variant?: 'primary' | 'secondary';
   size?: 'small' | 'medium' | 'large';
   rounded?: 'small' | 'medium' | 'full';

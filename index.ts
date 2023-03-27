@@ -5,7 +5,6 @@ export {
   Breadcrumb,
   Cover,
   Command,
-  Card,
   Cartel,
   Calendar,
   CalendarDay,

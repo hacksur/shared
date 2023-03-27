@@ -2,6 +2,7 @@ import * as React from 'react';
 import { DynamicForm, StepperForm } from './components';
 import { FormProvider } from './context';
 import { Button } from '..';
+import { type FormProps } from './types';
 
 export const Form: React.FC<FormProps> = ({
   type = 'default',

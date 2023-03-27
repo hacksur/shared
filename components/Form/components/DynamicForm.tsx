@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Input } from '../../index';
 import { useForm } from '../context';
+import { type DynamicFormProps } from '../types';
 
 export const DynamicForm: React.FC<DynamicFormProps> = ({
   debug = false,

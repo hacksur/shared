@@ -1,6 +1,5 @@
 import React from 'react';
 import clsx from 'clsx';
-import Tween from 'rc-tween-one';
 
 type ImageProps = {
   imageUrl: string;

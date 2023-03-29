@@ -1,4 +1,4 @@
-import { RadioGroup } from '~/src/components/RadioGroup';
+import { RadioGroup } from '~/src/atoms/components/RadioGroup';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

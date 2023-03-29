@@ -1,9 +1,9 @@
-import { Input } from '~/src/components/Input';
+import { Input } from '~/src/atoms/components/Input';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';
 
-function mockFunction(value): any {
+function mockFunction(value: any): any {
   // console.log(value);
 }
 

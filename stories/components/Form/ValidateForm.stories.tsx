@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Form } from '~/src/components/Form';
+import { Form } from '~/src/atoms/components/Form';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

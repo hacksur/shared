@@ -1,4 +1,4 @@
-import { Heading } from '~/src/components/Heading';
+import { Heading } from '~/src/atoms/components/Heading';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

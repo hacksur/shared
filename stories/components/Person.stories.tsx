@@ -1,4 +1,4 @@
-import { Person } from '~/src/components/Person';
+import { Person } from '~/src/atoms/components/Person';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

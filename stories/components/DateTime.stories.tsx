@@ -1,8 +1,8 @@
-import { DateTime } from '~/src/components/DateTime';
+import { DateTime } from '~/src/atoms/components/DateTime';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';
-import { FakeLink } from '~/src/helpers';
+import { FakeLink } from '~/src/atoms/helpers';
 
 export default {
   component: DateTime,

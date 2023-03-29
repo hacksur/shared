@@ -1,4 +1,4 @@
-import { Table } from '~/src/components/Table';
+import { Table } from '~/src/atoms/components/Table';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

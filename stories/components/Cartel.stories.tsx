@@ -1,5 +1,5 @@
-import { Cartel } from '~/src/components/Cartel';
-import { Button } from '~/src/components/Button';
+import { Cartel } from '~/src/atoms/components/Cartel';
+import { Button } from '~/src/atoms/components/Button';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

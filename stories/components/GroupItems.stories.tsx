@@ -1,5 +1,5 @@
-import { GroupItems } from '~/src/components/GroupItems';
-import { Button } from '~/src/components/Button';
+import { GroupItems } from '~/src/atoms/components/GroupItems';
+import { Button } from '~/src/atoms/components/Button';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

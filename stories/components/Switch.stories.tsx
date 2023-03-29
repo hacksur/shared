@@ -1,4 +1,4 @@
-import { Switch } from '~/src/components/Switch';
+import { Switch } from '~/src/atoms/components/Switch';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

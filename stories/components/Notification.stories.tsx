@@ -1,4 +1,4 @@
-import { Notification } from '~/src/components/Notification';
+import { Notification } from '~/src/atoms/components/Notification';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

@@ -1,9 +1,9 @@
-import { Slider, Image } from '~/src/components';
+import { Slider, Image } from '~/src/atoms/components';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';
-// import { FakeLink, experienceCards } from '~/src/helpers';
-// import { ExperienceCard } from '~/src/components/ExperienceCard';
+// import { FakeLink, experienceCards } from '~/src/atoms/helpers';
+// import { ExperienceCard } from '~/src/atoms/components/ExperienceCard';
 
 export default {
   component: Slider,

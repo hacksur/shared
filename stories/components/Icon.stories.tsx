@@ -1,4 +1,5 @@
-import { Icon, icons } from '~/src/components/Icon/';
+import { Icon } from '~/src/atoms/components/Icon/';
+import { icons } from '../../../assets/icons';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';
@@ -16,7 +17,7 @@ export default {
 export const Default = () => {
   return (
     <>
-      {Object.keys(icons).map((key) => {
+      {Object.keys(icons).map((key: any) => {
         return <Icon name={key} color="secondary" />;
       })}
     </>

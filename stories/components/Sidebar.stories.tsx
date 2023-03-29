@@ -1,4 +1,4 @@
-import { Sidebar, Button } from '~/src/components';
+import { Sidebar, Button } from '~/src/atoms/components';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

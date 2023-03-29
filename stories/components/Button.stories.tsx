@@ -1,9 +1,9 @@
 import React from 'react';
-import { Button } from '~/src/components/Button';
+import { Button } from '~/src/atoms/components/Button';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';
-import { FakeLink} from '~/src/helpers/'
+import { FakeLink} from '~/src/atoms/helpers/'
 export default {
   component: Button,
   title: 'Components / Button',

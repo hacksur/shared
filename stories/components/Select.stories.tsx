@@ -1,4 +1,4 @@
-import { Select } from '~/src/components/Select';
+import { Select } from '~/src/atoms/components/Select';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

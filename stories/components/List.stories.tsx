@@ -1,4 +1,4 @@
-import { List } from '~/src/components/List';
+import { List } from '~/src/atoms/components/List';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

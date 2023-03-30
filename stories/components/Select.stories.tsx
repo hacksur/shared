@@ -3,7 +3,7 @@ import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';
 
-function fn(value): any {
+function fn(value: any): any {
   // console.log(value);
 }
 

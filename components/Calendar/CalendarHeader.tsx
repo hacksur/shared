@@ -1,6 +1,6 @@
 import React from 'react';
 import { format } from 'date-fns';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
+// import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
 import { Dropdown } from '../Dropdown';
 
 type HeaderProps = {
@@ -63,7 +63,7 @@ export const CalendarHeader: React.FC<HeaderProps> = ({
               onClick={() => navigation.toPrev()}
             >
               <span className="sr-only">Previous month</span>
-              <ChevronLeftIcon className="h-5 w-5" aria-hidden="true" />
+              {/* <ChevronLeftIcon className="h-5 w-5" aria-hidden="true" /> */}
             </button>
             <button
               type="button"
@@ -79,7 +79,7 @@ export const CalendarHeader: React.FC<HeaderProps> = ({
               onClick={() => navigation.toNext()}
             >
               <span className="sr-only">Next month</span>
-              <ChevronRightIcon className="h-5 w-5" aria-hidden="true" />
+              {/* <ChevronRightIcon className="h-5 w-5" aria-hidden="true" /> */}
             </button>
           </div>
           <div className="md:flex md:items-center">

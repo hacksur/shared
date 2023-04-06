@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
-import { XIcon } from '@heroicons/react/outline';
+// import { XIcon } from '@heroicons/react/outline';
 type SlideOverProps = {};
 
 export const SlideOver: React.FC<SlideOverProps> = ({}) => {
@@ -51,7 +51,7 @@ export const SlideOver: React.FC<SlideOverProps> = ({}) => {
                       onClick={() => setOpen(false)}
                     >
                       <span className="sr-only">Close panel</span>
-                      <XIcon className="h-6 w-6" aria-hidden="true" />
+                      {/* <XIcon className="h-6 w-6" aria-hidden="true" /> */}
                     </button>
                   </div>
                 </Transition.Child>

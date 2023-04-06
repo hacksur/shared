@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Popover } from '@headlessui/react';
 import { Button } from '..'
 import { Transition } from '@headlessui/react';
-import { XIcon, ArrowsExpandIcon } from '@heroicons/react/outline';
+// import { XIcon, ArrowsExpandIcon } from '@heroicons/react/outline';
 import clsx from 'clsx';
 
 type SidebarProps = {
@@ -49,7 +49,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ initialState = false, user, it
                     onClick={closeSidebar}
                   >
                     <span className="sr-only">Close</span>
-                    <XIcon className="w-3 h-3" aria-hidden="true" />
+                    {/* <XIcon className="w-3 h-3" aria-hidden="true" /> */}
                   </button>
                 </div>
               </div>

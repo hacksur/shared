@@ -1,6 +1,6 @@
 import * as React from 'react';
 import clsx from 'clsx';
-import { SearchIcon } from '@heroicons/react/solid'
+// import { SearchIcon } from '@heroicons/react/solid'
 import { Combobox, Dialog, Transition } from '@headlessui/react'
 
 type CommandProps = {
@@ -55,10 +55,10 @@ export const Command: React.FC<CommandProps> = ({
             <Dialog.Panel className="mx-auto max-w-xl transform divide-y divide-gray-100 overflow-hidden rounded-xl bg-white shadow-2xl ring-1 ring-black ring-opacity-5 transition-all">
               <Combobox value={selectedPerson} onChange={(person: any) => (window.location = person.url)}>
                 <div className="relative">
-                  <SearchIcon
+                  {/* <SearchIcon
                     className="pointer-events-none absolute top-3.5 left-4 h-5 w-5 text-gray-400"
                     aria-hidden="true"
-                  />
+                  /> */}
                   <Combobox.Input
                     className="h-12 w-full border-0 bg-transparent pl-11 pr-4 text-gray-800 placeholder-gray-400 focus:ring-0 sm:text-sm"
                     placeholder="Search..."

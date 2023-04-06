@@ -46,7 +46,7 @@ export const PickerInput: React.FC<PickerInputProps> = ({
     if (!!defaultValue) {
       if (type === 'datepicker') {
         // console.log('defaultValue', defaultValue.length)
-        const date = DateTime.fromSeconds(defaultValue / 1000).startOf('day')
+        const date: any = DateTime.fromSeconds(defaultValue / 1000).startOf('day')
         const v = +new Date(date.toISO())/ 1000
         return setData({name: `${date.weekdayShort} ${date.day} ${date.monthLong}`, value: v.toString()});
 
@@ -54,7 +54,7 @@ export const PickerInput: React.FC<PickerInputProps> = ({
       // if (type === 'timepicker') return setData({name: startOfDay(defaultValue).toString(), value: formatISO(defaultValue, { representation: 'date' })});
     } else {
       if (type === 'datepicker') {
-        const date = DateTime.fromJSDate(new Date).startOf('day')
+        const date: any = DateTime.fromJSDate(new Date).startOf('day')
         const v = +new Date(date.toISO())/ 1000
         return setData({name: `${date.weekdayShort} ${date.day} ${date.monthLong}`, value: v.toString()});
 

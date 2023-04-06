@@ -1,7 +1,7 @@
 import{ useForm } from '../../Form/context/Form'
 import * as React from 'react';
 import clsx from 'clsx'
-import { CheckIcon, XIcon } from '@heroicons/react/solid';
+// import { CheckIcon, XIcon } from '@heroicons/react/solid';
 import { Icon } from '../..'
 type NumberInputProps = {
   config: any;
@@ -62,8 +62,12 @@ export const NumberInput: React.FC<NumberInputProps> = ({ config }: any) => {
 
   const iconStatus = (status: 'VALID' | 'ERROR' | 'EMPTY') => {
     switch(status) {
-      case 'VALID': return <CheckIcon className="w-[20px] h-[20px]"/>
-      case 'ERROR': return <XIcon className="w-[20px] h-[20px]"/>
+      case 'VALID': return (<div>
+        {/* <CheckIcon className="w-[20px] h-[20px]"/> */}
+        </div>)
+      case 'ERROR': return(<div>
+        {/* <XIcon className="w-[20px] h-[20px]"/> */}
+      </div>)
       default: return <div className="origin-center animate-spin"><Icon name="spinner" /></div>
     }
   }

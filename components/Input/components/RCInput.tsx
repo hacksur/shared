@@ -3,7 +3,7 @@ import { useIsFocused } from 'use-is-focused'
 import { CodeInput, getSegmentCssWidth } from 'rci'
 import { Icon } from '../../Icon';
 import clsx from 'clsx';
-import { CheckIcon, XIcon } from '@heroicons/react/solid';
+// import { CheckIcon, XIcon } from '@heroicons/react/solid';
 
 type RCInputProps = {
   config: any;
@@ -115,8 +115,8 @@ export const RCInput: React.FC<RCInputProps> = ({ config }: any) => {
             <Icon name="spinner" size="medium"/>
           </div>
         }
-        { state === 'success' && <CheckIcon className="w-[30px] h-[30px]"/>}
-        { state === 'error' && <XIcon className="w-[30px] h-[30px]"/>}
+        {/* { state === 'success' && <CheckIcon className="w-[30px] h-[30px]"/>} */}
+        {/* { state === 'error' && <XIcon className="w-[30px] h-[30px]"/>} */}
       </div>
     </div>
 

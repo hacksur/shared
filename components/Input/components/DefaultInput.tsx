@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useForm } from '../../Form/context';
-import { CheckIcon, XIcon } from '@heroicons/react/solid';
+// import { CheckIcon, XIcon } from '@heroicons/react/solid';
 import { Icon } from '../..'
 type DefaultInputProps = {
   config: any;

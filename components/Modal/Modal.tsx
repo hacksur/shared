@@ -1,7 +1,7 @@
 import { Dialog, Transition } from '@headlessui/react';
 import React, { Fragment } from 'react';
 import clsx from 'clsx';
-import { XIcon, ArrowsExpandIcon } from '@heroicons/react/outline';
+// import { XIcon, ArrowsExpandIcon } from '@heroicons/react/outline';
 
 type ModalProps = {
   children: React.ReactNode;
@@ -108,7 +108,7 @@ export const Modal: React.FC<ModalProps> = ({
                             onClick={closeModal}
                           >
                             <span className="sr-only">Close</span>
-                            <XIcon className="w-3 h-3" aria-hidden="true" />
+                            {/* <XIcon className="w-3 h-3" aria-hidden="true" /> */}
                           </button>
                           <button
                             type="button"
@@ -116,10 +116,10 @@ export const Modal: React.FC<ModalProps> = ({
                             onClick={() => setExpanded(!expanded)}
                           >
                             <span className="sr-only">Close</span>
-                            <ArrowsExpandIcon
+                            {/* <ArrowsExpandIcon
                               className="w-3 h-3"
                               aria-hidden="true"
-                            />
+                            /> */}
                           </button>
                         </div>
                       </div>

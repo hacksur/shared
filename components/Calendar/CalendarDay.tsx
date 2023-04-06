@@ -3,7 +3,7 @@ import React from 'react';
 import { format } from 'date-fns';
 import { timesOfDay } from './constants';
 import clsx from 'clsx';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
+// import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
 import { configResponsive, useResponsive } from 'ahooks';
 import { DateTime } from 'luxon';
 import { CalendarHeader } from './CalendarHeader'
@@ -206,7 +206,7 @@ export const DayView: React.FC<DayViewProps> = ({
               className="-m-1.5 flex flex-none items-center justify-center p-1.5 text-neutral-400 hover:text-neutral-500"
             >
               <span className="sr-only">Previous month</span>
-              <ChevronLeftIcon className="h-5 w-5" aria-hidden="true" />
+              {/* <ChevronLeftIcon className="h-5 w-5" aria-hidden="true" /> */}
             </button>
             <div className="flex-auto font-semibold">
               {format(cursorDate, 'MMMM Y')}
@@ -217,7 +217,7 @@ export const DayView: React.FC<DayViewProps> = ({
               className="-m-1.5 flex flex-none items-center justify-center p-1.5 text-neutral-400 hover:text-neutral-500"
             >
               <span className="sr-only">Next month</span>
-              <ChevronRightIcon className="h-5 w-5" aria-hidden="true" />
+              {/* <ChevronRightIcon className="h-5 w-5" aria-hidden="true" /> */}
             </button>
           </div>
           <div className="mt-6 grid grid-cols-7 text-center text-xs leading-6 text-neutral-500">

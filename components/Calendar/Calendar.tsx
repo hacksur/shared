@@ -2,7 +2,7 @@ import React from 'react';
 import { CalendarViewType, useCalendar } from '@h6s/calendar';
 import { format } from 'date-fns';
 import clsx from 'clsx';
-import { ClockIcon } from '@heroicons/react/solid';
+// import { ClockIcon } from '@heroicons/react/solid';
 import { WeekView } from './CalendarWeek';
 import { DayView } from './CalendarDay';
 import { MonthDesktop, MonthMobile } from './CalendarMonth';
@@ -147,10 +147,10 @@ export const Calendar: React.FC<CalendarProps> = ({ events = [], CTA, openModal,
                       )}
                       className="mt-2 flex items-center text-neutral-700"
                     >
-                      <ClockIcon
+                      {/* <ClockIcon
                         className="mr-2 h-5 w-5 text-neutral-400"
                         aria-hidden="true"
-                      />
+                      /> */}
                       {format(new Date(event.timestamp * 1000), 'hh bbbb')}
                     </time>
                   </div>

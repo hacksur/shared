@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Listbox, Transition } from '@headlessui/react';
-import { CheckIcon, SelectorIcon } from '@heroicons/react/solid';
+// import { CheckIcon, SelectorIcon } from '@heroicons/react/solid';
 
 type SelectProps = {
   type: 'action' | 'input';
@@ -46,10 +46,10 @@ export const Select: React.FunctionComponent<SelectProps> = ({
           <Listbox.Button className={`${!!open ? 'bg-neutral-50' : 'bg-neutral-100 border-neutral-200'} relative w-full shadow-sm py-2 pl-3 pr-10 text-left text-neutral-800 rounded-md cursor-default open:bg-neutral-50 active:ring-1 active:ring-offset-1 active:ring-blue-500 sm:text-sm border`}>
             <span className="block truncate">{selected?.name} { !selected && 'Select your option'}</span>
             <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
-              <SelectorIcon
+              {/* <SelectorIcon
                 className="w-5 h-5 text-primary"
                 aria-hidden="true"
-              />
+              /> */}
             </span>
           </Listbox.Button>
           <Transition
@@ -92,7 +92,7 @@ export const Select: React.FunctionComponent<SelectProps> = ({
                           }
                                 absolute inset-y-0 left-0 flex items-center pl-3`}
                         >
-                          <CheckIcon className="w-5 h-5" aria-hidden="true" />
+                          {/* <CheckIcon className="w-5 h-5" aria-hidden="true" /> */}
                         </span>
                       ) : null}
                     </>

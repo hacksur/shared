@@ -44,4 +44,5 @@ export { Tooltip } from './Tooltip';
 export { Text } from './Text';
 export { Debug } from './Debug'
 export { QRCode } from './QRCode'
-
+export { TextList } from './TextList'
+export { ColorChecker } from './ColorChecker'

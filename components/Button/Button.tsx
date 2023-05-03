@@ -122,12 +122,12 @@ export const Button: React.FunctionComponent<ButtonProps> = ({
   const dropdownStyle = clsx(
     `${active ? 'bg-neutral-150 text-neutral-800' : 'text-neutral-600'}`,
     disabled && 'cursor-not-allowed bg-neutral-100 hover:bg-neutral-100', 
-    `group flex items-center py-[8px] px-[16px]  text-sm w-full
+    `group flex items-center py-[8px] px-[16px]  text-sm
     hover:outline-none hover:bg-neutral-100 hover:text-primary-400
     hover:ring-[1px] hover:ring-primary-200 hover:ring-offset-neutral-50
     focus:outline-none focus:bg-neutral-100 focus:text-primary-400
     focus:ring-[1px] focus:ring-primary-200 focus:ring-offset-neutral-50
-    ${customCss}`
+    w-full ${customCss}`
   );
 
   const spanStyle = clsx(
@@ -163,6 +163,7 @@ export const Button: React.FunctionComponent<ButtonProps> = ({
     audio.play();
   }
 
+  console.log('type', type, text)
   if (type === 'menu')
     return (
       <Menu.Button className={buttonStyle} disabled={disabled}>

@@ -39,7 +39,10 @@ export {
   Slider,
   Sidebar,
   Tooltip,
-  QRCode
+  QRCode,
+  TextList,
+  Debug,
+  ColorChecker,
 } from './components';
 export type {
   itemsNavigationProps,

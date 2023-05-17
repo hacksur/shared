@@ -48,7 +48,7 @@ export const Button: React.FunctionComponent<ButtonProps> = ({
   loading = false,
   active = false,
 }) => {
-
+  
   const buttonStyle = clsx(
     `transition ease-in-out delay-75 duration-300 inline-flex justify-center cursor-pointer flex items-center justify-center font-bold`,
     variant === 'primary' && `${active ? 'bg-primary-800' : 'bg-primary-700'} text-neutral-100 border border-primary-700
@@ -163,7 +163,6 @@ export const Button: React.FunctionComponent<ButtonProps> = ({
     audio.play();
   }
 
-  console.log('type', type, text)
   if (type === 'menu')
     return (
       <Menu.Button className={buttonStyle} disabled={disabled}>

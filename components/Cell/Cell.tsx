@@ -1,9 +1,14 @@
 // Cells are List and Table child components for displaying data.
 
 import React from 'react';
-import { Button, Dropdown, Person } from '..'
+import { Button, Dropdown, Person } from '..';
 type CellProps = {
-  value: string | { text: string, to: string } | { text: string, imageUrl: string } | { text:string, content: any, onClick?: any } | any;
+  value:
+    | string
+    | { text: string; to: string }
+    | { text: string; imageUrl: string }
+    | { text: string; content: any; onClick?: any }
+    | any;
   type:
     | 'simple'
     | 'link'
@@ -15,7 +20,7 @@ type CellProps = {
     | 'dropdown'
     | 'person'
     | 'image';
-  component?: React.ElementType
+  component?: React.ElementType;
 };
 
 // type DropdownItemsI = {
@@ -25,23 +30,35 @@ type CellProps = {
 //   to?: string;
 // }[];
 
-
-export const Cell: React.FC<CellProps> = ({ type, value, component: Component }) => {
+export const Cell: React.FC<CellProps> = ({
+  type,
+  value,
+  component: Component
+}) => {
   const handleClick = () => {
     // runSound()
     if (type === 'button') value?.onClick(value?.content);
   };
 
-  const cellAssert = (type: string, value: string | { text: string, to: string } | any) => {  
+  const cellAssert = (
+    type: string,
+    value: string | { text: string; to: string } | any
+  ) => {
     switch (type) {
       case 'simple':
-        return <div className="text-paragraph-small-medium px-6 py-4">{value}</div>;
+        return (
+          <div className="text-paragraph-small-medium px-6 py-4">{value}</div>
+        );
       case 'person':
-        return <div className="px-[16px]"><Person imageUrl={value.avatar_url} fullname={value.first_name} /></div>
+        return (
+          <div className="px-[16px]">
+            <Person imageUrl={value.avatar_url} fullname={value.first_name} />
+          </div>
+        );
 
       case 'description':
         return (
-          <div className='px-6 py-4'>
+          <div className="px-6 py-4">
             <div className="text-sm text-neutral-800">{value.title}</div>
             <div className="text-sm text-neutral-500">{value.description}</div>
           </div>
@@ -60,15 +77,19 @@ export const Cell: React.FC<CellProps> = ({ type, value, component: Component })
               <div className="text-sm font-medium text-neutral-800">
                 {value.title}
               </div>
-              <div className="text-sm text-neutral-500">{value.description}</div>
+              <div className="text-sm text-neutral-500">
+                {value.description}
+              </div>
             </div>
           </div>
         );
       case 'button':
-        return <><Button size="tiny" text={value.text} onClick={() => handleClick()}/></>;
-      case 'link':
+        return <><Button size="tiny" text={value.text} onClick={() => handleClick()} {...value}/></>;
+      case 'internal_link':
         if (!!Component)
-        return <Component to={value.to}>{value.text}</Component>;
+          return <Component to={value.to}>{value.text}</Component>;
+      case 'link':
+        return <a href={value.to}>{value.text}</a>;
       case 'badge':
         return <></>;
       case 'icon':
@@ -85,7 +106,13 @@ export const Cell: React.FC<CellProps> = ({ type, value, component: Component })
         );
       case 'image':
         return (
-          <div className="flex h-[64px] px-6 py-4"style={{ backgroundImage: `linear-gradient(to left, rgba(44, 51, 53, 1), rgba(44, 51, 53, 0.5), rgba(44, 51, 53, 0.5), rgba(44, 51, 53, 0.2)), url('${value.imageUrl}')`, backgroundSize: 'cover'}} >
+          <div
+            className="flex h-[64px] px-6 py-4"
+            style={{
+              backgroundImage: `linear-gradient(to left, rgba(44, 51, 53, 1), rgba(44, 51, 53, 0.5), rgba(44, 51, 53, 0.5), rgba(44, 51, 53, 0.2)), url('${value.imageUrl}')`,
+              backgroundSize: 'cover'
+            }}
+          >
             {value.text}
           </div>
         );
@@ -93,5 +120,5 @@ export const Cell: React.FC<CellProps> = ({ type, value, component: Component })
         return <></>;
     }
   };
-  return cellAssert(type, value)
+  return cellAssert(type, value);
 };

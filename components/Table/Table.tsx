@@ -54,7 +54,7 @@ export const Table: React.FC<TableProps> = ({ header, data, component, backgroun
                           {row.map((column, key) => {
                             return (
                               <td
-                                className={`${ background === 'default' ? 'bg-neutral-100' : 'bg-neutral-150'} text-neutral-800 whitespace-nowrap h-[64px]`}
+                                className={`${ background === 'default' ? 'bg-neutral-100' : 'bg-neutral-150'} text-neutral-800 min-h-[64px] max-w-[500px]`}
                                 key={key}
                               >
                                 <Cell type={column.type} value={column.value} component={component} />

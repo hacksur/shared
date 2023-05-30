@@ -1,13 +1,13 @@
-import { Heading } from '~/src/shared/components/Heading';
+import { Header } from '~/src/shared/components/Header';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';
 
 export default {
-  component: Heading,
-  title: 'Components / Heading',
+  component: Header,
+  title: 'Components / Header',
   args: {
-    variant: 'h1'
+    section: { title: 'Header' }
   },
   argTypes: {
     section: {
@@ -21,7 +21,7 @@ export default {
   decorators: [withDesign]
 };
 
-export const Default = (args: any) => <Heading {...args} />;
+export const Default = (args: any) => <Header {...args} />;
 
 Default.parameters = {
   design: {

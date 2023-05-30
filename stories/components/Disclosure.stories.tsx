@@ -1,4 +1,4 @@
-import { Disclosure } from '~/src/atoms/components/Disclosure';
+import { Disclosure } from '~/src/shared/components/Disclosure';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

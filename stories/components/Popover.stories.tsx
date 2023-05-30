@@ -1,5 +1,5 @@
 import React from 'react';
-import { Popover } from '~/src/atoms/components/Popover';
+import { Popover } from '~/src/shared/components/Popover';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

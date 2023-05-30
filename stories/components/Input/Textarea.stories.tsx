@@ -1,4 +1,4 @@
-import { Input } from '~/src/atoms/components/Input';
+import { Input } from '~/src/shared/components/Input';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

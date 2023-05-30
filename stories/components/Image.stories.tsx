@@ -1,4 +1,4 @@
-import { Image } from '~/src/atoms/components/Image';
+import { Image } from '~/src/shared/components/Image';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

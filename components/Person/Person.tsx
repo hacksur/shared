@@ -31,7 +31,7 @@ export const Person: React.FC<PersonProps> = ({
           <Avatar imageUrl={imageUrl} size="tiny"/>
         </div>
         <div>
-          <span className="text-paragraph-small-bold text-neutral-800">{fullname}</span>
+          <span className="text-p3-bold text-neutral-800">{fullname}</span>
         </div>
       </div>
       case 'lab':
@@ -41,7 +41,7 @@ export const Person: React.FC<PersonProps> = ({
         </div>
         <div className="flex flex-col-reverse">
           <div>
-            <div className="text-paragraph-medium-bold text-neutral-800">{fullname}</div>
+            <div className="text-p2-bold text-neutral-800">{fullname}</div>
             <div className="text-caption-bold text-primary-500">{details}</div>
           </div>
         </div>
@@ -52,7 +52,7 @@ export const Person: React.FC<PersonProps> = ({
           <Avatar imageUrl={imageUrl} size="medium"/>
         </div>
         <div className="grid content-center">
-            <div className="text-paragraph-medium-bold text-neutral-800">{fullname}</div>
+            <div className="text-p2-bold text-neutral-800">{fullname}</div>
             <div className="text-caption-bold text-primary-500">{details}</div>
         </div>
         </div>
@@ -60,14 +60,14 @@ export const Person: React.FC<PersonProps> = ({
         return  <div className="flex space-x-[8px] w-fit"> 
         <Avatar imageUrl={imageUrl} size="xtiny"/>
         <div>
-          <div className="mt-[2px] text-paragraph-small-bold text-neutral-800 align-middle">{fullname}</div>
+          <div className="mt-[2px] text-p3-bold text-neutral-800 align-middle">{fullname}</div>
         </div>
       </div>
       default:
         return  <div className="flex space-x-4 w-fit"> 
         <Avatar imageUrl={imageUrl} size="tiny"/>
         <div>
-          <div className="mt-[5px] text-paragraph-small-bold text-neutral-800 align-middle">{fullname}</div>
+          <div className="mt-[5px] text-p3-bold text-neutral-800 align-middle">{fullname}</div>
         </div>
       </div>
     }

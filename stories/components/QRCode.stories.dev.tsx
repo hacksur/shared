@@ -1,4 +1,4 @@
-import { QRCode } from '~/src/atoms/components/QRCode';
+import { QRCode } from '~/src/shared/components/QRCode';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

@@ -1,4 +1,4 @@
-import { Avatar } from '~/src/atoms/components';
+import { Avatar } from '~/src/shared/components';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

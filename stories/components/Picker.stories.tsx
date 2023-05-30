@@ -1,4 +1,4 @@
-import { DatePicker } from '~/src/atoms/components/DatePicker';
+import { DatePicker } from '~/src/shared/components/DatePicker';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

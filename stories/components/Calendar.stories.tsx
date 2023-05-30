@@ -1,4 +1,4 @@
-import { Calendar, Layout } from '~/src/atoms/components';
+import { Calendar, Layout } from '~/src/shared/components';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

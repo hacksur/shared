@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon, Image, Badge } from '../../';
+import { Icon, Image, Badge } from '../..';
 import { RadioGroup as RadioGroupComponent } from '@headlessui/react';
 import { motion } from "framer-motion";
 

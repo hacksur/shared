@@ -46,7 +46,7 @@ export const Cartel: React.FC<CartelProps> = ({
           <div>
             <div className="flex flex-col space-y-[20px] p-[40px] ">
               <div className="text-subheading-bold">{title}</div>
-              <div className="text-paragraph-medium-medium">{description}</div>
+              <div className="text-p2-medium">{description}</div>
               <div className="h-[64px]">{CTA}</div>
             </div>
           </div>

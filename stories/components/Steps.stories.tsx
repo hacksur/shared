@@ -1,4 +1,4 @@
-import { Steps } from '~/src/atoms/components/Steps';
+import { Steps } from '~/src/shared/components/Steps';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

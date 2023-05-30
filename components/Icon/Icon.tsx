@@ -26,7 +26,7 @@ const Path: React.FC<PathProps> = ({ name }: { name: IconKeys}) => {
 export const Icon: React.FunctionComponent<IconProps> = ({
   name,
   color,
-  viewBox = '0 0 14 16',
+  viewBox = '0 0 64 64',
   size = 'small',
   customCss,
 }) => {

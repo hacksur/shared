@@ -47,7 +47,7 @@ export const Cell: React.FC<CellProps> = ({
     switch (type) {
       case 'simple':
         return (
-          <div className="text-paragraph-small-medium px-6 py-4">{value}</div>
+          <div className="text-p3-medium px-6 py-4">{value}</div>
         );
       case 'person':
         return (

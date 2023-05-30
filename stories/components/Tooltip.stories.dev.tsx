@@ -1,4 +1,4 @@
-import { Tooltip } from '~/src/atoms/components/Tooltip';
+import { Tooltip } from '~/src/shared/components/Tooltip';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

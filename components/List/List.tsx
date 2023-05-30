@@ -22,7 +22,7 @@ type ListProps = {
 
 export const List: React.FC<ListProps> = ({ data, component, background = 'default'}) => {
   return (
-    <div className={`text-paragraph-medium-medium text-neutral-800 shadow sm:rounded-[20px] ${background === 'default' ? 'bg-neutral-100' : 'bg-neutral-150'} overflow-hidden` }>
+    <div className={`text-p2-medium text-neutral-800 shadow sm:rounded-[20px] ${background === 'default' ? 'bg-neutral-100' : 'bg-neutral-150'} overflow-hidden` }>
       <ul role="list" className="divide-y divide-neutral-50">
         {data.map((row, key) => (
           <li key={key} className="">

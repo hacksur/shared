@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon, Image } from '../../';
+import { Icon, Image } from '../..';
 import { RadioGroup as RadioGroupComponent } from '@headlessui/react';
 
 type DefaultOptions = {

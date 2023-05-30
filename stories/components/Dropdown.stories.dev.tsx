@@ -1,4 +1,4 @@
-import { Dropdown, type DropdownItemsI } from '~/src/atoms/components/Dropdown';
+import { Dropdown, type DropdownItemsI } from '~/src/shared/components/Dropdown';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

@@ -1,4 +1,4 @@
-import { Tab } from '~/src/atoms/components/Tab';
+import { Tab } from '~/src/shared/components/Tab';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

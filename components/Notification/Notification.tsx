@@ -47,7 +47,7 @@ export const Notification: React.FunctionComponent<NotificationProps> = ({
                   </div>
                   <div className="ml-3 w-0 flex-1 pt-0.5">
                     <p className="text-sm font-medium text-neutral-900"></p>
-                    <p className="mt-1 text-paragraph-large-medium text-center text-neutral-700">{title}</p>
+                    <p className="mt-1 text-p1-medium text-center text-neutral-700">{title}</p>
                   </div>
                   {/* <div className="ml-4 flex-shrink-0 flex">
                     <button

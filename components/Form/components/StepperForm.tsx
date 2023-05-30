@@ -97,8 +97,8 @@ export const StepperForm: React.FC<DynamicFormProps> = ({
             </div>
             <div className="flex flex-col space-y-[8px]">
               <div>
-                <span className="text-green-400 text-paragraph-medium-bold">{step}</span>
-                <span className="text-green-200 text-paragraph-medium-medium pl-[2px]">/{maxStep + 1}</span>
+                <span className="text-green-400 text-p2-bold">{step}</span>
+                <span className="text-green-200 text-p2-medium pl-[2px]">/{maxStep + 1}</span>
               </div>
               <div className={barContainer}>
                 <div className={`bg-green-400 rounded-[2px] h-[4px] col-span-${step + 1}`} />
@@ -142,7 +142,7 @@ export const StepperForm: React.FC<DynamicFormProps> = ({
                   
                   return <>
                     { title && <div className="text-subheading-bold text-neutral-800">{title}</div> }
-                    { description && <div className="text-paragraph-small-medium text-neutral-400">{description}</div> }
+                    { description && <div className="text-p3-medium text-neutral-400">{description}</div> }
                     <Input
                       key={key}
                       type={type}
@@ -178,8 +178,8 @@ export const StepperForm: React.FC<DynamicFormProps> = ({
           </div>
           <div className="flex flex-col space-y-[8px]">
             <div>
-              <span className="text-neutral-800 text-paragraph-medium-bold">{step + 1}</span>
-              <span className="text-neutral-400 text-paragraph-medium-medium pl-[2px]">/{maxStep + 1}</span>
+              <span className="text-neutral-800 text-p2-bold">{step + 1}</span>
+              <span className="text-neutral-400 text-p2-medium pl-[2px]">/{maxStep + 1}</span>
             </div>
           <div className={barContainer}>
             <div className={`bg-primary-400 rounded-[2px] h-[4px] col-span-${step + 1}`}></div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Popover, Transition } from '@headlessui/react';
-import { Button, Icon } from '../../';
+import { Button, Icon } from '../..';
 import { Fragment } from 'react';
 import { DateTime } from 'luxon'
 import { formatISO, startOfDay } from 'date-fns';

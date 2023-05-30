@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal } from '~/src/atoms/components/Modal';
+import { Modal } from '~/src/shared/components/Modal';
 // import { Button } from '../components/Button';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';

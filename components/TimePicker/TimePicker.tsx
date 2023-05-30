@@ -66,7 +66,7 @@ export const TimePicker: React.FC<TimePickerProps> = ({
   return (
     <>
     <div>
-      <div className="text-neutral-800 text-paragraph-medium">
+      <div className="text-neutral-800 text-p2">
         {/* {value.hour.name} - {value.minute.name} */}
       </div>
       <div className="flex flex-row space-x-[16px]">

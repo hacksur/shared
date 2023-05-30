@@ -46,7 +46,7 @@ export const DatePicker: React.FC<DatePickerProps> = ({
       onDateSelected={handleOnDateSelected}
     />
     {/* <div className="p-[8px] text-neutral-800">
-      <div className="text-paragraph-small-medium">Lunar Data</div>
+      <div className="text-p3-medium">Lunar Data</div>
       <div className="flex space-x-[8px] text-caption-bold">
         <div>{Moon.lunarPhaseEmoji(selected?.selectedDate)}</div>
         <div>{Moon.lunarPhase(selected?.selectedDate)}</div>

@@ -1,5 +1,5 @@
-import { TextList } from '~/src/atoms/components/TextList';
-import { Button } from '~/src/atoms/components/Button';
+import { TextList } from '~/src/shared/components/TextList';
+import { Button } from '~/src/shared/components/Button';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

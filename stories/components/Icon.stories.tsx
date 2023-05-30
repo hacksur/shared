@@ -1,4 +1,4 @@
-import { Icon } from '~/src/atoms/components/Icon/';
+import { Icon } from '~/src/shared/components/Icon/';
 import { icons } from '../../../assets/icons';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
@@ -7,10 +7,6 @@ import '~/styles/index.css';
 export default {
   component: Icon,
   title: 'Elements / Icon',
-  args: {
-    name: 'user',
-    color: 'white'
-  },
   decorators: [withDesign]
 };
 
@@ -18,7 +14,7 @@ export const Default = () => {
   return (
     <>
       {Object.keys(icons).map((key: any) => {
-        return <Icon name={key} color="secondary" />;
+        return <Icon name={key} color="secondary" size="xlarge" />;
       })}
     </>
   );

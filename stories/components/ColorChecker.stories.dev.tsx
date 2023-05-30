@@ -1,4 +1,4 @@
-import { ColorChecker } from '~/src/atoms/components/ColorChecker';
+import { ColorChecker } from '~/src/shared/components/ColorChecker';
 import { withDesign } from 'storybook-addon-designs';
 import { Meta } from '@storybook/react';
 import '~/styles/index.css';

@@ -8,11 +8,9 @@ export default {
   title: 'Components / Avatar',
   argTypes: {
     imageUrl: {
-      type: {
-        summary: 'string'
-      },
+      name: 'imageUrl',
       defaultValue:
-        'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80'
+      'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80'
     }
   },
   decorators: [withDesign]
